@@ -1,0 +1,60 @@
+%%
+%% GMU LaTeX PhD Dissertation Format Template
+%%
+%% Developed by:
+%%      Daniel O. Awduche and Christopher A. St. Jean
+%%      Communications and Networking Lab
+%%      Dept. of Electrical and Computer Engineering
+%%
+%% Usage note are in this file
+%% 
+%% 04/27/2023 Tammy Stitz Changed to use the same sty file for theses and dissertations
+%% 07/22/2023 Fixed vertical spacing between the text and figures/tables
+%
+%%**********************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either
+%% expressed or implied; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall any contributor to this code be liable for any damages
+%% or losses, including, but not limited to, incidental, consequential, or
+%% any other damages, resulting from the use or misuse of any information
+%% contained here.
+%%**********************************************************************
+%%
+%% $Id: GMU_template.tex,v 1.87 2023/05/10 $
+%%
+
+\documentclass[11pt,letterpaper]{report}
+\usepackage{gmuETD}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[normalem]{ulem}
+\usepackage[noadjust,sort]{cite}
+\usepackage{setspace}
+\usepackage{url}
+\setlength{\textfloatsep}{33pt}
+\setlength{\floatsep}{33pt}
+\setlength{\intextsep}{33pt}
+\beforedoc
+\input{proposal-cover}
+\begin{document}
+\input{metadata}
+\proposalfirstpage
+\tableofcontents
+\startofchapters
+\include{chapters/01-introduction}
+\include{chapters/02-related-work}
+\include{chapters/03-methodology}
+\include{chapters/04-research-plan}
+
+% Optional appendix: uncomment all three lines when needed.
+% \appendix
+% \appendixeqnumbering
+% \include{appendix}
+
+% Enable these two lines after adding your own references and citations.
+% \bibliographystyle{unsrt}
+% \bibliography{references}
+\end{document}
